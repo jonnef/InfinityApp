@@ -1,15 +1,19 @@
 import React from 'react';
-import * as Mui from '@mui/material/';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+// import SvgIcon from '@mui/material/SvgIcon';
+import MenuIcon from '@mui/icons-material/Menu';
+import {Toolbar, AppBar} from '@mui/material';
 import './App.css';
 
 function App() {
-  return(
-    <div>
-      <Mui.AppBar position="static">
-        <Mui.Toolbar>
-        </Mui.Toolbar>
-      </Mui.AppBar> 
+  return (
+    <div className="App">
+      <Toolbar>
+        <AppBar>
+
+        </AppBar>
+      </Toolbar>
+      <h1>Hallo</h1>
+      <MenuIcon/>
     </div>
   );
 }
