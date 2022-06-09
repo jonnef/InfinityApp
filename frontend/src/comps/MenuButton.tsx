@@ -9,6 +9,7 @@ function MenuButton() {
   return (
     <div>
       <Mui.IconButton onClick={() => setOpen(true)}><MenuIcon /></Mui.IconButton>
+      Startseite
       <Mui.Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
         <Mui.Box p={2} width="200px" textAlign="center" role="presentation" style={{ backgroundColor: "lightgrey" }}>
           <h2 style={{ color: "green" }}>Menu</h2>
