@@ -3,6 +3,7 @@ import * as Mui from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ThemeProvider } from '@mui/material/styles';
 import defaultTheme from '../Theme';
+import HomeIcon from '@mui/icons-material/Home';
 
 function MenuButton() {
 
@@ -17,9 +18,9 @@ function MenuButton() {
         backgroundColor: 'teal'
       }}}anchor="left" open={open} onClose={() => setOpen(false)}>
         <Mui.Box p={2} width="200px" textAlign="center" role="presentation">
-          <div><h2 color="secondary">Menu</h2></div>
-          <div><Mui.Button variant="contained" color="inherit" style={{borderColor: "seagreen"}}>Test</Mui.Button></div><br/>
-          <div><Mui.Button variant="contained" color="inherit">Test</Mui.Button></div>
+          <div><Mui.IconButton><HomeIcon/></Mui.IconButton></div>
+          <div><Mui.Button size="small" variant="contained" color="inherit" style={{borderColor: "seagreen"}} href="chest">Test</Mui.Button></div><br/>
+          <div><Mui.Button size="small" variant="contained" color="inherit">Test</Mui.Button></div>
         </Mui.Box>
       </Mui.Drawer>
       </ThemeProvider>

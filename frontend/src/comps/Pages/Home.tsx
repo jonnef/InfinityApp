@@ -1,20 +1,11 @@
-import { Toolbar, AppBar } from '@mui/material';
-import MenuButton from '../Button/MenuButton';
-import { ThemeProvider } from '@mui/material/styles';
-import defaultTheme from '../Theme';
+import * as Mui from '@mui/material';
+import InfinityAppBar from '../InfinityAppBar';
 
 function Home(){
     return(
-      <div className="App">
-        <ThemeProvider theme={defaultTheme}>
-      		<AppBar color="primary">
-        		<Toolbar>
-          		<MenuButton />
-        		</Toolbar>
-      		</AppBar>
-      		<h1>Hallo</h1>
-      	</ThemeProvider>
-    </div>
+      <div className="Home">
+        <InfinityAppBar />
+			</div>
     );
 }
 
