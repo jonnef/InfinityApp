@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import * as Mui from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import HomeButton from './HomeButton';
 import { ThemeProvider } from '@mui/material/styles';
 import defaultTheme from '../Theme';
-import HomeIcon from '@mui/icons-material/Home';
 
 function MenuButton() {
 
@@ -18,7 +18,7 @@ function MenuButton() {
         backgroundColor: 'teal'
       }}}anchor="left" open={open} onClose={() => setOpen(false)}>
         <Mui.Box p={2} width="200px" textAlign="center" role="presentation">
-          <div><Mui.IconButton><HomeIcon/></Mui.IconButton></div>
+          <div><HomeButton /></div>
           <div><Mui.Button size="small" variant="contained" color="inherit" style={{borderColor: "seagreen"}} href="chest">Test</Mui.Button></div><br/>
           <div><Mui.Button size="small" variant="contained" color="inherit">Test</Mui.Button></div>
         </Mui.Box>
