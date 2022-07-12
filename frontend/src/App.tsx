@@ -1,11 +1,11 @@
 import React from 'react';
 // import SvgIcon from '@mui/material/SvgIcon';
 import './App.css';
-import Home from './comps/Pages/Home';
+import Routing from './comps/Routing'
 
 function App() {
   return (
-    <Home />
+    <Routing />
   );
 }
 
