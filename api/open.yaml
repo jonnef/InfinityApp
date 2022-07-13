@@ -1,0 +1,97 @@
+openapi: 3.0.0
+info:
+  title: InfinityApp API
+  description: This is the API of InfinityApp by jonnef
+  version: 1.0.0
+servers:
+  - url: http://infinityapp-api.com
+  - url: http://jonnef-api.com
+paths:
+  /person:
+    description: Person Resource
+    get:
+      description: Operation to Fetch Persons
+      parameters:
+        - in: query
+          name: username
+          required: true
+          schema:
+            type: string
+            example: jonnef
+      responses:
+        200:
+          description: Success!
+          content:
+            application/json:
+              schema:
+                $ref: persons
+    post:
+      description: Add a new Person
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                    PEID:
+                      type: integer
+                    Username:
+                      type: string
+                      example: jonnef
+                    Vorname:
+                      type: string
+                      example: Kenny
+      responses:
+        201:
+          description: Successfully added
+  /person{id}:
+    description: Get Person based on Path Parameter
+    get:
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: Success Response with Path Parameter
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    PEID:
+                      type: integer
+                    Username:
+                      type: string
+                      example: jonnef
+                    Vorname:
+                      type: string
+                      example: Kenny
+components:
+  schemas:
+    person:
+      type: object
+      properties:
+        PEID:
+          type: integer
+        Username:
+          type: string
+          example: jonnef
+        Vorname:
+          type: string
+          example: Kenny
+    persons:
+      type: array
+      items:
+        properties:
+          PEID:
+            type: integer
+          Username:
+            type: string
+            example: jonnef
+          Vorname:
+            type: string
+            example: Kenny
