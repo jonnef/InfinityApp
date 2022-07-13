@@ -31,16 +31,7 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                    PEID:
-                      type: integer
-                    Username:
-                      type: string
-                      example: jonnef
-                    Vorname:
-                      type: string
-                      example: Kenny
+              $ref: person
       responses:
         201:
           description: Successfully added
@@ -59,17 +50,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  properties:
-                    PEID:
-                      type: integer
-                    Username:
-                      type: string
-                      example: jonnef
-                    Vorname:
-                      type: string
-                      example: Kenny
+                $ref: persons
 components:
   schemas:
     person:
