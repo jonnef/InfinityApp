@@ -22,4 +22,4 @@ jobs:
         uses: char0n/swagger-editor-validate@v1
         with:
           swagger-editor-url: http://localhost/
-          definition-file: api\\open.yaml
+          definition-file: api//open.yaml
