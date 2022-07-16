@@ -4,6 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Swagger UI Action
-        uses: Legion2/swagger-ui-action@v1.1.5
+      - name: Swagger Editor Validator
+        uses: char0n/swagger-editor-validate@v1.3.1
+
 
