@@ -24,14 +24,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: persons
+                $ref: '#/components/schemas/persons'
     post:
       description: Add a new Person
       requestBody:
         content:
           application/json:
             schema:
-              $ref: person
+              $ref: '#/components/schemas/person'
       responses:
         201:
           description: Successfully added
@@ -50,7 +50,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: persons
+                $ref: '#/components/schemas/persons'
 components:
   schemas:
     person:
