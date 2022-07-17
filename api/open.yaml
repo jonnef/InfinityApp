@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.0.1
 info:
   title: InfinityApp API
   description: This is the API of InfinityApp by jonnef
