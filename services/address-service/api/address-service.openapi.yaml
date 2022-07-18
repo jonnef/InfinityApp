@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: AddressService API
-  description: This is the API of InfinityApp by jonnef
+  description: This is the API of InfinityApp by jonnef [test](https://jonnef.github.io/InfinityApp/)
   version: 1.0.0
 servers:
   - url: http://infinityapp-api.com
