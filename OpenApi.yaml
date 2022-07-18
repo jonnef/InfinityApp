@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: AddressService API
+  title: Test API
   description: This is the API of InfinityApp by jonnef
   version: 1.0.0
 servers:
